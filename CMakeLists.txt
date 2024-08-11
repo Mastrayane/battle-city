@@ -22,3 +22,6 @@ add_subdirectory(external/glad)
 
 # Линковка с библиотекой glad
 target_link_libraries(${PROJECT_NAME} glad)
+
+# Установка целевой платформы (x64)
+set(CMAKE_GENERATOR_PLATFORM "x64" CACHE STRING "" FORCE)
